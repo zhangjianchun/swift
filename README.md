@@ -30,6 +30,3 @@ matrix[1, 0] = 3.2
 
 print(matrix.grid)//[0.0, 1.5, 3.2, 0.0]
 
-java йт
-
-java 2йт
