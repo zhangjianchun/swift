@@ -1,25 +1,26 @@
 # swift
 struct Ma {
 
-let rows: Int, columns: Int
-var grid: [Double]
+	let rows: Int, columns: Int
+	var grid: [Double]
 
 
-init(rows: Int, columns: Int) {
-self.rows = rows
-self.columns = columns
-grid = Array(count: rows * columns, repeatedValue: 0.0)}
+	init(rows: Int, columns: Int) {
+		self.rows = rows
+		self.columns = columns
+		grid = Array(count: rows * columns, repeatedValue: 0.0)
+	}
 
-subscript(row: Int, column: Int) -> Double {
-get {
+	subscript(row: Int, column: Int) -> Double {
+		get {
 
-return grid[(row * columns) + column]
-}
-set {
+			return grid[(row * columns) + column]
+		}
+		set {
 
-grid[(row * columns) + column] = newValue
-}
-}
+			grid[(row * columns) + column] = newValue
+		}
+	}
 }
 
 var matrix = Ma(rows: 2, columns: 2)
